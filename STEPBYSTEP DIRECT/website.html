@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepByStep Direct</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    // Embedded data
+    window.JESSE_SOURCE = {
+  "label": "Jesse & The Mechanic",
+  "subtitle": "Auto shop / Late afternoon",
+  "baseline": {
+    "concept": "A young driver brings their car in for what seems like a routine check, but the mechanic's knowing glance at the dashboard reveals a deeper story about neglect, consequences, and the cost of ignoring warning signs.",
+    "shots": [
+      {
+        "id": 1,
+        "frame": "CU: Jesse's hands gripping the steering wheel, knuckles white, dashboard warning lights glowing red in the background blur",
+        "audio": "Engine rattling, warning chime beeping insistently",
+        "duration": 5,
+        "valueShift": "Anxiety → Dread"
+      },
+      {
+        "id": 2,
+        "frame": "MCU: Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting",
+        "audio": "Engine sputters to silence, distant pneumatic tools",
+        "duration": 5,
+        "valueShift": "False confidence → Exposure"
+      },
+      {
+        "id": 3,
+        "frame": "CU: Mechanic's weathered hands opening the hood, steam rising, a slight head shake",
+        "audio": "Hood latch click, hiss of escaping pressure, heavy sigh",
+        "duration": 5,
+        "valueShift": "Hope → Reality"
+      },
+      {
+        "id": 4,
+        "frame": "ECU: Mechanic's eyes meeting Jesse's through the gap above the raised hood, no judgment, just truth",
+        "audio": "Silence except distant radio, then: 'How long has it been like this?'",
+        "duration": 5,
+        "valueShift": "Denial → Admission"
+      },
+      {
+        "id": 5,
+        "frame": "CU: Jesse's face, looking down, then slowly back up, a small nod of acknowledgment",
+        "audio": "Quiet admission: 'A while.' Pause. 'Too long.'",
+        "duration": 5,
+        "valueShift": "Shame → Acceptance"
+      },
+      {
+        "id": 6,
+        "frame": "MCU: Mechanic's hand on Jesse's shoulder, gentle but firm, both standing by the open hood",
+        "audio": "'We'll figure it out. But you gotta listen to the signs next time.'",
+        "duration": 5,
+        "valueShift": "Isolation → Connection"
+      }
+    ],
+    "invisibleWide": "This isn't just about a car. Jesse's been ignoring warning signs in their life for months—relationships, health, responsibilities. The mechanic represents the moment when avoidance meets consequence, but also the possibility of repair.",
+    "stormCloud": {
+      "detail": "The dashboard warning lights have been on for three months. Jesse kept covering them with a sticky note.",
+      "rating": "WELL-HIDDEN"
+    },
+    "platform": {
+      "length": "30 seconds",
+      "hook": "Opening shot of white knuckles and red warning lights immediately signals tension",
+      "loop": "Yes — the circular nature of ignoring problems creates natural replay curiosity",
+      "soundOff": "Strong — visual storytelling through hands, eyes, and warning lights carries the narrative"
+    }
+  },
+  "directions": {
+    "funnier": {
+      "label": "Funnier",
+      "concept": "A young driver brings their car in for what seems like a routine check, but the mechanic's deadpan reactions to the absurd state of neglect turn a tense moment into a comedy of automotive denial.",
+      "shotOverrides": {
+        "3": {
+          "frame": "CU: Mechanic's weathered hands opening the hood, steam rising, a long pause, then pulling out a sticky note covering the warning lights",
+          "audio": "Hood latch click, hiss of pressure, then: 'Is this... is this a Post-it?'",
+          "valueShift": "Hope → Absurdity"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's face, eyebrows raised to maximum height, looking at Jesse with theatrical disbelief",
+          "audio": "'Three months?' Long pause. 'THREE MONTHS?!'",
+          "valueShift": "Denial → Comic Revelation"
+        },
+        "6": {
+          "frame": "MCU: Mechanic gesturing wildly at the engine, Jesse trying not to laugh, both shaking their heads",
+          "audio": "'Next time maybe try... I don't know... NOT covering the problem with office supplies?'",
+          "valueShift": "Shame → Shared Laughter"
+        }
+      },
+      "stormCloud": {
+        "detail": "The sticky note covering the warning lights has a smiley face drawn on it.",
+        "rating": "TOO OBVIOUS"
+      }
+    },
+    "darker": {
+      "label": "Darker",
+      "concept": "A young driver brings their car in knowing it's too late, and the mechanic's silence confirms what they both understand: some damage can't be undone, some warnings ignored too long.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Jesse's face through windshield, no smile, just hollow acceptance, eyes already knowing",
+          "audio": "Engine dies with a final shudder, then oppressive silence",
+          "valueShift": "Resignation → Void"
+        },
+        "3": {
+          "frame": "CU: Mechanic's hands opening hood, revealing catastrophic damage, hands pause mid-air",
+          "audio": "Hood opens to reveal grinding metal sounds, something broken beyond repair",
+          "valueShift": "Faint hope → Finality"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes meeting Jesse's, a look that says 'I'm sorry' without words",
+          "audio": "Complete silence. No question asked. None needed.",
+          "valueShift": "Question → Answer"
+        },
+        "6": {
+          "frame": "MCU: Mechanic's hand hovering near Jesse's shoulder but not touching, both staring at the engine",
+          "audio": "Distant traffic. Wind. The weight of too-late.",
+          "valueShift": "Connection → Solitude"
+        }
+      },
+      "invisibleWide": "Jesse knew it was terminal weeks ago. This visit isn't about repair—it's about hearing someone else confirm what they've been too afraid to admit. The car is a metaphor for something else they've lost.",
+      "stormCloud": {
+        "detail": "Jesse's phone has 47 unread messages from someone named 'Mom.' The last one is from two weeks ago.",
+        "rating": "INVISIBLE"
+      }
+    },
+    "tender": {
+      "label": "Tender",
+      "concept": "A young driver brings their car in afraid of judgment, but finds unexpected kindness in a mechanic who sees past the neglect to the person struggling beneath it.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands on steering wheel, trembling slightly, a deep breath visible in shoulder movement",
+          "audio": "Engine rattling, but also Jesse's shaky exhale, gathering courage",
+          "valueShift": "Fear → Vulnerability"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes, soft with understanding, a small reassuring nod before speaking",
+          "audio": "Gentle: 'Hey. It's okay. We all get overwhelmed sometimes.'",
+          "valueShift": "Bracing for judgment → Unexpected grace"
+        },
+        "5": {
+          "frame": "CU: Jesse's face, eyes welling up, a grateful smile breaking through",
+          "audio": "Voice cracking: 'I didn't know who else to ask.' Pause. 'Thank you.'",
+          "valueShift": "Shame → Relief"
+        },
+        "6": {
+          "frame": "MCU: Mechanic's hand on Jesse's shoulder, both looking at the engine together, a team now",
+          "audio": "'One step at a time. We'll get through this together.'",
+          "valueShift": "Alone → Supported"
+        }
+      },
+      "invisibleWide": "Jesse's been carrying more than car trouble—job loss, family illness, depression. The mechanic recognizes the signs of someone drowning and offers a lifeline disguised as car repair.",
+      "stormCloud": {
+        "detail": "There's a hospital parking pass on Jesse's dashboard from six months of daily visits.",
+        "rating": "WELL-HIDDEN"
+      },
+      "platform": {
+        "length": "30 seconds",
+        "hook": "Trembling hands and a deep breath signal emotional stakes beyond automotive",
+        "loop": "Yes — the emotional journey invites rewatching for the tender moments",
+        "soundOff": "Moderate — facial expressions carry emotion, but dialogue adds crucial context"
+      }
+    },
+    "surreal": {
+      "label": "Surreal",
+      "concept": "A young driver brings their car to a mechanic who seems to understand that the vehicle's problems are manifestations of something stranger—warnings from a reality that's starting to glitch.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands on wheel, but the warning lights flicker in impossible patterns, spelling words",
+          "audio": "Engine sounds layered with reversed whispers, warning chimes in musical sequence",
+          "valueShift": "Confusion → Unreality"
+        },
+        "3": {
+          "frame": "CU: Mechanic's hands opening hood, but steam forms shapes—faces, symbols, dissolving",
+          "audio": "Hood opens with a sound like tearing fabric, steam hisses in rhythm",
+          "valueShift": "Expectation → Otherworldly"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes reflecting the engine, but the reflection shows something else entirely—stars, void",
+          "audio": "'This isn't about the car, is it?' Voice echoes slightly, doubled",
+          "valueShift": "Question → Cosmic awareness"
+        },
+        "5": {
+          "frame": "CU: Jesse's face, but their features subtly shift, flicker, like a signal losing reception",
+          "audio": "Jesse's voice layered with static: 'I don't know what's real anymore.'",
+          "valueShift": "Identity → Dissolution"
+        },
+        "6": {
+          "frame": "MCU: Both standing by the hood, but the background warps, bends, the shop becoming somewhere else",
+          "audio": "'The signs were never about the car. They were about waking up.'",
+          "valueShift": "Reality → Transcendence"
+        }
+      },
+      "invisibleWide": "The auto shop exists in a liminal space between worlds. The mechanic is a guide for those whose warning lights are actually messages from their subconscious trying to break through consensus reality.",
+      "stormCloud": {
+        "detail": "Every clock in the shop shows a different time. None of them are moving.",
+        "rating": "WELL-HIDDEN"
+      }
+    },
+    "minimalist": {
+      "label": "Minimalist",
+      "concept": "Warning lights. A hood opens. Eyes meet. Truth spoken. Nothing more needed.",
+      "shots": [
+        {
+          "id": 1,
+          "frame": "ECU: Red warning light glowing on black dashboard",
+          "audio": "Single warning chime. Silence.",
+          "duration": 5,
+          "valueShift": "Signal → Attention"
+        },
+        {
+          "id": 2,
+          "frame": "CU: Hood latch releasing, hands in frame",
+          "audio": "Click. Creak. Hiss.",
+          "duration": 5,
+          "valueShift": "Closed → Open"
+        },
+        {
+          "id": 3,
+          "frame": "ECU: Two pairs of eyes across the engine bay",
+          "audio": "Breathing. Distant traffic.",
+          "duration": 5,
+          "valueShift": "Separate → Connected"
+        },
+        {
+          "id": 4,
+          "frame": "CU: Single hand gesture toward the engine",
+          "audio": "'How long?' Pause. 'Too long.'",
+          "duration": 5,
+          "valueShift": "Question → Answer"
+        },
+        {
+          "id": 5,
+          "frame": "MCU: Two figures, silhouettes against bright shop door",
+          "audio": "'We'll fix it.' Footsteps.",
+          "duration": 5,
+          "valueShift": "Problem → Solution"
+        }
+      ],
+      "invisibleWide": "Everything unnecessary removed. Only the essential exchange remains.",
+      "stormCloud": {
+        "detail": "The warning light is the only color in the entire piece.",
+        "rating": "INVISIBLE"
+      },
+      "platform": {
+        "length": "25 seconds",
+        "hook": "Single red light on black—immediate visual hook",
+        "loop": "Yes — minimalism invites repeated viewing to catch details",
+        "soundOff": "Excellent — pure visual storytelling"
+      }
+    },
+    "operatic": {
+      "label": "Operatic",
+      "concept": "A young driver's arrival at the auto shop becomes an epic confrontation with fate itself, where a mechanic serves as both judge and potential savior in a battle against the consequences of willful ignorance.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands clutching the wheel like a ship's captain in a storm, warning lights blazing like fire",
+          "audio": "Engine roaring like a wounded beast, warning chimes building to crescendo",
+          "duration": 9,
+          "valueShift": "Defiance → Reckoning"
+        },
+        "2": {
+          "frame": "MCU: Jesse emerging from the car in slow motion, shop looming like a cathedral, mechanic silhouetted in doorway",
+          "audio": "Engine death rattle echoes, footsteps heavy as a funeral march",
+          "duration": 9,
+          "valueShift": "Pride → Humility"
+        },
+        "3": {
+          "frame": "CU: Hood thrown open dramatically, steam erupting like a volcano, mechanic's face illuminated from below",
+          "audio": "Hood crashes open, steam roars, then sudden silence—the calm before judgment",
+          "duration": 9,
+          "valueShift": "Revelation → Judgment"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes boring into Jesse's soul, the weight of truth unbearable",
+          "audio": "'How long?' Voice like thunder. Long pause. 'HOW LONG?!' Echo.",
+          "duration": 9,
+          "valueShift": "Interrogation → Confession"
+        },
+        "5": {
+          "frame": "CU: Jesse falling to their knees beside the car, hands covering face, mechanic standing above",
+          "audio": "Jesse's voice breaking: 'I knew. God help me, I knew.' Wind howls.",
+          "duration": 9,
+          "valueShift": "Denial → Catharsis"
+        },
+        "6": {
+          "frame": "MCU: Mechanic extending hand to lift Jesse up, backlit by setting sun streaming through shop door",
+          "audio": "'Then we begin again. Together.' Swelling ambient sound, hope rising.",
+          "duration": 9,
+          "valueShift": "Despair → Redemption"
+        }
+      ],
+      "invisibleWide": "This is not a car repair. This is a morality play about the human condition—our capacity for self-deception, the inevitability of consequence, and the possibility of grace. The auto shop is a stage for the eternal drama of fall and redemption.",
+      "stormCloud": {
+        "detail": "The mechanic's name tag reads 'Gabriel.' The shop is called 'Last Chance Auto.'",
+        "rating": "TOO OBVIOUS"
+      },
+      "platform": {
+        "length": "54 seconds",
+        "hook": "Dramatic hands on wheel with blazing warning lights—immediate epic scale",
+        "loop": "No — too emotionally exhausting for immediate replay",
+        "soundOff": "Poor — the operatic audio is essential to the experience"
+      }
+    }
+  }
+}
+;
+    window.CHANGELESS_SOURCE = {
+  "label": "Changeless",
+  "subtitle": "Coffee shop / Morning routine",
+  "baseline": {
+    "concept": "A person orders the same coffee they've ordered every day for years, but today the barista asks a simple question that cracks open the comfortable prison of routine and forces a choice between safety and change.",
+    "shots": [
+      {
+        "id": 1,
+        "frame": "CU: Hands placing exact change on counter, coins arranged in the same pattern as always",
+        "audio": "Coins clink in familiar rhythm, espresso machine hissing in background",
+        "duration": 5,
+        "valueShift": "Comfort → Automation"
+      },
+      {
+        "id": 2,
+        "frame": "MCU: Customer's face, mouth opening to order before barista even looks up, the words rehearsed",
+        "audio": "'The usual—' but barista interrupts: 'Wait.'",
+        "duration": 5,
+        "valueShift": "Certainty → Disruption"
+      },
+      {
+        "id": 3,
+        "frame": "CU: Barista's hand hovering over the cup, marker poised, but not writing yet",
+        "audio": "'What if you tried something different today?' Pause. Espresso machine stops.",
+        "duration": 5,
+        "valueShift": "Routine → Possibility"
+      },
+      {
+        "id": 4,
+        "frame": "ECU: Customer's eyes widening slightly, a flicker of panic, then curiosity",
+        "audio": "Silence except distant cafe chatter, then: 'I... I don't know what else I'd want.'",
+        "duration": 5,
+        "valueShift": "Reflex → Awareness"
+      },
+      {
+        "id": 5,
+        "frame": "CU: Customer's hand reaching toward the menu board, fingers trembling slightly",
+        "audio": "Paper rustling, breath held, then: 'What do you recommend?'",
+        "duration": 5,
+        "valueShift": "Fear → Courage"
+      },
+      {
+        "id": 6,
+        "frame": "MCU: Barista smiling, writing a new name on the cup, customer watching with nervous anticipation",
+        "audio": "Marker squeaking on cup, then: 'Trust me. You're ready for this.'",
+        "duration": 5,
+        "valueShift": "Stagnation → Growth"
+      }
+    ],
+    "invisibleWide": "This isn't about coffee. It's about a life lived on autopilot, where every choice was made years ago and never reconsidered. The barista represents the voice that asks: what if you're not the same person you were when you made these choices?",
+    "stormCloud": {
+      "detail": "The customer has been ordering the same drink for 1,847 consecutive days. The barista has been counting.",
+      "rating": "WELL-HIDDEN"
+    },
+    "platform": {
+      "length": "30 seconds",
+      "hook": "Exact change in familiar pattern immediately signals routine about to break",
+      "loop": "Yes — the moment of choice invites reflection on viewer's own routines",
+      "soundOff": "Moderate — visual body language strong, but dialogue adds crucial context"
+    }
+  },
+  "directions": {
+    "funnier": {
+      "label": "Funnier",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista stages an intervention that's equal parts comedy and genuine concern about their customer's beverage monotony.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Customer's mouth opening, but barista holds up hand like a traffic cop, whistle around neck",
+          "audio": "'STOP. We need to talk about your relationship with medium roast.'",
+          "valueShift": "Routine → Intervention"
+        },
+        "3": {
+          "frame": "CU: Barista pulling out a chart labeled 'Days Since Last New Order: 1,847' with tally marks",
+          "audio": "'I've been tracking. This is... this is not healthy.'",
+          "valueShift": "Concern → Absurd Documentation"
+        },
+        "4": {
+          "frame": "ECU: Customer's face cycling through confusion, offense, then reluctant laughter",
+          "audio": "'Are you... are you seriously coffee-shaming me right now?'",
+          "valueShift": "Defense → Amused Surrender"
+        },
+        "6": {
+          "frame": "MCU: Barista presenting new drink like a game show prize, customer applauding sarcastically",
+          "audio": "'Congratulations! You've unlocked: TRYING SOMETHING NEW!' Confetti falls.",
+          "valueShift": "Resistance → Playful Acceptance"
+        }
+      },
+      "stormCloud": {
+        "detail": "The barista has a support group flyer: 'Creatures of Habit Anonymous - Tuesdays at 7pm'",
+        "rating": "TOO OBVIOUS"
+      }
+    },
+    "darker": {
+      "label": "Darker",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista's question reveals that the routine isn't comfort—it's a cage, and they've forgotten they ever had the key.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands placing exact change, but coins are worn smooth from years of the same transaction",
+          "audio": "Coins clink with hollow sound, espresso machine sounds like a heartbeat monitor",
+          "valueShift": "Routine → Entrapment"
+        },
+        "3": {
+          "frame": "CU: Barista's hand hovering over cup, but their expression is sad, almost pitying",
+          "audio": "'When was the last time you chose anything?' Voice gentle but cutting.",
+          "duration": 5,
+          "valueShift": "Question → Accusation"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes, but they're hollow, the panic of someone who can't remember who they were",
+          "audio": "Long silence. Then whispered: 'I don't remember.' Realization dawning.",
+          "valueShift": "Confusion → Horror"
+        },
+        "5": {
+          "frame": "CU: Customer's hand reaching toward menu, but it's shaking, paralyzed by too many options",
+          "audio": "Breathing quickens, cafe sounds become overwhelming, retreat: 'Just... the usual.'",
+          "valueShift": "Attempt → Failure"
+        },
+        "6": {
+          "frame": "MCU: Barista writing the usual order, customer's face blank, both knowing something died here",
+          "audio": "Marker squeaks. No words. The espresso machine sounds like a funeral dirge.",
+          "valueShift": "Hope → Resignation"
+        }
+      },
+      "invisibleWide": "The customer once had dreams, plans, a self that made choices. But somewhere along the way, they traded agency for the comfort of never having to decide. Now they're not sure there's anyone left inside to choose.",
+      "stormCloud": {
+        "detail": "The customer's phone wallpaper is from five years ago. They haven't changed it because they haven't noticed.",
+        "rating": "INVISIBLE"
+      }
+    },
+    "tender": {
+      "label": "Tender",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista's gentle question opens a door to change that feels less like disruption and more like coming home to yourself.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Customer starting to order, but barista's warm smile makes them pause, really see each other",
+          "audio": "Barista, softly: 'Hey. Can I ask you something?' Genuine care in voice.",
+          "valueShift": "Transaction → Connection"
+        },
+        "3": {
+          "frame": "CU: Barista's hand gently touching the menu, inviting rather than pushing",
+          "audio": "'I've been wondering... is this still what you want? Or just what you're used to?'",
+          "valueShift": "Challenge → Invitation"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes softening, a small smile, relief at being seen",
+          "audio": "'You know what? I'm not sure anymore.' Pause. 'And that's okay?'",
+          "valueShift": "Uncertainty → Permission"
+        },
+        "5": {
+          "frame": "CU: Customer's hand on menu, but relaxed now, exploring with curiosity not fear",
+          "audio": "'What made you happy before you stopped asking?' Gentle, patient.",
+          "valueShift": "Pressure → Discovery"
+        },
+        "6": {
+          "frame": "MCU: Both leaning over counter, looking at menu together, a shared moment of possibility",
+          "audio": "'Let's find out together.' Marker writes something new. Both smile.",
+          "valueShift": "Alone → Accompanied"
+        }
+      },
+      "invisibleWide": "The barista has watched this customer shrink into routine over the years and has been waiting for the right moment to offer a gentle hand back toward choice. This is an act of quiet care.",
+      "stormCloud": {
+        "detail": "The barista has been leaving different drink recommendations on the customer's cup for weeks. Today is the first day they noticed.",
+        "rating": "WELL-HIDDEN"
+      },
+      "platform": {
+        "length": "30 seconds",
+        "hook": "Warm smile disrupting routine signals emotional rather than transactional story",
+        "loop": "Yes — the tender moment of connection invites rewatching",
+        "soundOff": "Moderate — facial expressions carry warmth, but dialogue adds depth"
+      }
+    },
+    "surreal": {
+      "label": "Surreal",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista reveals that the routine has been a spell, and breaking it means stepping into a reality that's been waiting behind the counter all along.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands placing coins, but they leave trails of light, the counter surface ripples like water",
+          "audio": "Coins chime like bells, espresso machine hums in impossible harmonics",
+          "valueShift": "Mundane → Magical"
+        },
+        "2": {
+          "frame": "MCU: Customer's mouth opening, but the words come out backwards, time stuttering",
+          "audio": "Voice echoes, layered: 'lausu eht' then forward: 'Wait, what?'",
+          "valueShift": "Script → Glitch"
+        },
+        "3": {
+          "frame": "CU: Barista's hand hovering over cup, but the cup is infinite, containing galaxies",
+          "audio": "'You've been ordering the same thing for 1,847 days. Do you know why?'",
+          "valueShift": "Question → Cosmic significance"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes reflecting the menu, but the menu shows their own memories, alternate lives",
+          "audio": "'Because if you order something different, you become someone different.' Whispered.",
+          "valueShift": "Confusion → Revelation"
+        },
+        "5": {
+          "frame": "CU: Customer's hand touching menu, but their hand phases through it, becoming translucent",
+          "audio": "'I'm not real, am I?' Voice calm, accepting. 'I'm just the routine.'",
+          "valueShift": "Identity → Dissolution"
+        },
+        "6": {
+          "frame": "MCU: Barista writing on cup, but the name written is the customer's true name, forgotten",
+          "audio": "'You were real once. Want to try again?' Cup glows. Reality shifts.",
+          "valueShift": "Pattern → Rebirth"
+        }
+      },
+      "invisibleWide": "The coffee shop exists at the intersection of all possible choices. Every regular customer is a person who chose routine over change so many times they became the routine itself. The barista is the guardian of the threshold back to agency.",
+      "stormCloud": {
+        "detail": "Every other customer in the shop is ordering the same thing. They're all the same person at different points in the loop.",
+        "rating": "WELL-HIDDEN"
+      }
+    },
+    "minimalist": {
+      "label": "Minimalist",
+      "concept": "Same order. Different question. Choice made. Change begins.",
+      "shots": [
+        {
+          "id": 1,
+          "frame": "ECU: Coins on counter, arranged in exact pattern",
+          "audio": "Clink. Clink. Clink.",
+          "duration": 5,
+          "valueShift": "Pattern → Recognition"
+        },
+        {
+          "id": 2,
+          "frame": "CU: Two faces across counter, eye contact",
+          "audio": "'The usual?' Pause. 'Or?'",
+          "duration": 5,
+          "valueShift": "Assumption → Question"
+        },
+        {
+          "id": 3,
+          "frame": "ECU: Hand hovering between two menu items",
+          "audio": "Silence. Breathing. Decision.",
+          "duration": 5,
+          "valueShift": "Paralysis → Movement"
+        },
+        {
+          "id": 4,
+          "frame": "CU: Finger pointing to new choice",
+          "audio": "'This one.' Exhale.",
+          "duration": 5,
+          "valueShift": "Old → New"
+        },
+        {
+          "id": 5,
+          "frame": "MCU: Marker writing different name on cup",
+          "audio": "Squeak. Squeak. Done.",
+          "duration": 5,
+          "valueShift": "Same → Different"
+        }
+      ],
+      "invisibleWide": "Everything unnecessary removed. Only the moment of choice remains.",
+      "stormCloud": {
+        "detail": "The new drink name on the cup is the customer's own name. They'd been ordering by number.",
+        "rating": "INVISIBLE"
+      },
+      "platform": {
+        "length": "25 seconds",
+        "hook": "Precise coin pattern immediately signals routine about to break",
+        "loop": "Yes — minimalism invites repeated viewing",
+        "soundOff": "Excellent — pure visual storytelling"
+      }
+    },
+    "operatic": {
+      "label": "Operatic",
+      "concept": "A person stands at the precipice of their daily ritual, but today the barista becomes a prophet, the coffee shop a temple, and the choice between the usual and the unknown becomes an epic battle for the soul's freedom.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands slamming coins on counter like a gauntlet thrown, the sound echoing through the shop",
+          "audio": "Coins crash like cymbals, espresso machine roars like an orchestra tuning",
+          "duration": 9,
+          "valueShift": "Routine → Ritual"
+        },
+        "2": {
+          "frame": "MCU: Customer's mouth opening to order, but barista raises hand, light streaming behind them",
+          "audio": "'STOP!' Voice booms. Cafe goes silent. 'Not today. Not anymore.'",
+          "duration": 9,
+          "valueShift": "Expectation → Confrontation"
+        },
+        "3": {
+          "frame": "CU: Barista's hand sweeping across the menu like Moses parting the sea, revealing infinite options",
+          "audio": "'1,847 days you've chosen safety! Today you choose LIFE!' Thunder rumbles.",
+          "duration": 9,
+          "valueShift": "Comfort → Destiny"
+        },
+        "4": {
+          "frame": "ECU: Customer's face, tears streaming, the weight of years of non-choice crashing down",
+          "audio": "'I'm afraid!' Voice breaking. 'What if I choose wrong?!' Wind howls.",
+          "duration": 9,
+          "valueShift": "Denial → Catharsis"
+        },
+        "5": {
+          "frame": "CU: Customer's hand reaching toward menu, trembling, other customers watching in slow motion",
+          "audio": "'There is no wrong! Only the death of never choosing!' Crescendo building.",
+          "duration": 9,
+          "valueShift": "Paralysis → Courage"
+        },
+        "6": {
+          "frame": "MCU: Customer pointing to new drink, barista writing with flourish, light exploding from cup",
+          "audio": "'YES!' Both voices together. Cafe erupts in applause. Music swells. Rebirth.",
+          "duration": 9,
+          "valueShift": "Stagnation → Transcendence"
+        }
+      ],
+      "invisibleWide": "This is not a coffee shop. This is the arena where the human spirit battles the tyranny of habit. The barista is not an employee but a warrior-priest fighting for the customer's soul against the seductive prison of the familiar.",
+      "stormCloud": {
+        "detail": "The shop's name is 'The Last Chance Cafe.' The customer has been here exactly 1,847 times. Tomorrow it closes forever.",
+        "rating": "TOO OBVIOUS"
+      },
+      "platform": {
+        "length": "54 seconds",
+        "hook": "Coins crashing like cymbals immediately signals epic scale",
+        "loop": "No — too emotionally intense for immediate replay",
+        "soundOff": "Poor — the operatic audio is essential"
+      }
+    }
+  }
+}
+;
+  </script>
+
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // Theme system
+    const themes = {
+      flyers: {
+        name: "Flyers", abbr: "PHI", bg: "#1A1A1A", bgAlt: "#242424", surface: "#2A2A2A",
+        accent: "#F74902", accentHover: "#FF5A1A", text: "#FFFFFF", textSecondary: "#C4C4C4",
+        textMuted: "#888888", textDim: "#666666", border: "rgba(247, 73, 2, 0.15)",
+        borderSubtle: "rgba(255, 255, 255, 0.1)", inputBg: "#2A2A2A",
+        gradient: "linear-gradient(135deg, rgba(247, 73, 2, 0.1) 0%, rgba(247, 73, 2, 0) 100%)",
+        ratingGood: "#10B981", ratingMid: "#F59E0B", ratingBad: "#EF4444",
+        pill: "rgba(247, 73, 2, 0.1)", pillBorder: "rgba(247, 73, 2, 0.3)", tag: "rgba(247, 73, 2, 0.2)"
+      },
+      claude: {
+        name: "Claude", abbr: "ANTH", bg: "#2D2B28", bgAlt: "#3D3A35", surface: "#3D3A35",
+        accent: "#DA7756", accentHover: "#E68A6A", text: "#F5F0EB", textSecondary: "#C7BFB6",
+        textMuted: "#998F84", textDim: "#7A7067", border: "rgba(218, 119, 86, 0.18)",
+        borderSubtle: "rgba(245, 240, 235, 0.1)", inputBg: "#3D3A35",
+        gradient: "linear-gradient(135deg, rgba(218, 119, 86, 0.1) 0%, rgba(218, 119, 86, 0) 100%)",
+        ratingGood: "#10B981", ratingMid: "#F59E0B", ratingBad: "#EF4444",
+        pill: "rgba(218, 119, 86, 0.1)", pillBorder: "rgba(218, 119, 86, 0.3)", tag: "rgba(218, 119, 86, 0.2)"
+      },
+      amazon: {
+        name: "Amazon", abbr: "AMZN", bg: "#0F1111", bgAlt: "#1A1F23", surface: "#1A1F23",
+        accent: "#FF9900", accentHover: "#FFB84D", text: "#E8EAED", textSecondary: "#A8B1BA",
+        textMuted: "#6B7785", textDim: "#4D5761", border: "rgba(255, 153, 0, 0.15)",
+        borderSubtle: "rgba(232, 234, 237, 0.1)", inputBg: "#1A1F23",
+        gradient: "linear-gradient(135deg, rgba(255, 153, 0, 0.1) 0%, rgba(255, 153, 0, 0) 100%)",
+        ratingGood: "#10B981", ratingMid: "#F59E0B", ratingBad: "#EF4444",
+        pill: "rgba(255, 153, 0, 0.1)", pillBorder: "rgba(255, 153, 0, 0.3)", tag: "rgba(255, 153, 0, 0.2)"
+      }
+    };
+
+    function getTheme(themeKey) {
+      return themes[themeKey] || themes.claude;
+    }
+
+    function applyThemeToDOM(theme) {
+      const root = document.documentElement;
+      Object.entries(theme).forEach(([key, value]) => {
+        if (key !== 'name' && key !== 'abbr') {
+          const cssVar = '--' + key.replace(/([A-Z])/g, '-$1').toLowerCase();
+          root.style.setProperty(cssVar, value);
+        }
+      });
+    }
+
+    function loadThemeFromStorage() {
+      return localStorage.getItem('stepbystep-theme') || 'claude';
+    }
+
+    function saveThemeToStorage(themeKey) {
+      localStorage.setItem('stepbystep-theme', themeKey);
+    }
+
+    // Direction resolution
+    function applyDirection(source, directionKey) {
+      if (!directionKey || directionKey === 'baseline') {
+        return { ...source.baseline, directionHistory: [] };
+      }
+
+      const direction = source.directions[directionKey];
+      if (!direction) {
+        return { ...source.baseline, directionHistory: [] };
+      }
+
+      const baseline = source.baseline;
+      let finalShots;
+
+      if (direction.shots && Array.isArray(direction.shots)) {
+        finalShots = direction.shots;
+      } else if (direction.shotOverrides) {
+        finalShots = baseline.shots.map(shot => {
+          const override = direction.shotOverrides[shot.id];
+          return override ? { ...shot, ...override } : shot;
+        });
+      } else {
+        finalShots = baseline.shots;
+      }
+
+      return {
+        concept: direction.concept ?? baseline.concept,
+        shots: finalShots,
+        invisibleWide: direction.invisibleWide ?? baseline.invisibleWide,
+        stormCloud: direction.stormCloud ?? baseline.stormCloud,
+        platform: direction.platform ?? baseline.platform,
+        directionHistory: [directionKey]
+      };
+    }
+
+    // Main component
+    const SOURCES = {
+      jesse: window.JESSE_SOURCE,
+      changeless: window.CHANGELESS_SOURCE
+    };
+
+    function StepByStepDirect() {
+      const [currentTheme, setCurrentTheme] = useState('claude');
+      const [currentSource, setCurrentSource] = useState('jesse');
+      const [currentDirection, setCurrentDirection] = useState(null);
+      const [storyboard, setStoryboard] = useState(null);
+      const [directionInput, setDirectionInput] = useState('');
+      const [isTransitioning, setIsTransitioning] = useState(false);
+
+      useEffect(() => {
+        const savedTheme = loadThemeFromStorage();
+        setCurrentTheme(savedTheme);
+        applyThemeToDOM(getTheme(savedTheme));
+      }, []);
+
+      useEffect(() => {
+        const source = SOURCES[currentSource];
+        const resolved = applyDirection(source, currentDirection);
+        setStoryboard(resolved);
+      }, [currentSource, currentDirection]);
+
+      const handleThemeChange = (themeKey) => {
+        setCurrentTheme(themeKey);
+        applyThemeToDOM(getTheme(themeKey));
+        saveThemeToStorage(themeKey);
+      };
+
+      const handleSourceChange = (sourceKey) => {
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentSource(sourceKey);
+          setCurrentDirection(null);
+          setDirectionInput('');
+          window.scrollTo(0, 0);
+          setIsTransitioning(false);
+        }, 400);
+      };
+
+      const handleApplyDirection = (directionKey) => {
+        if (!directionKey) return;
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentDirection(directionKey);
+          setDirectionInput('');
+          window.scrollTo(0, 0);
+          setIsTransitioning(false);
+        }, 400);
+      };
+
+      const handleDirectionSubmit = (e) => {
+        e.preventDefault();
+        const normalized = directionInput.toLowerCase().trim();
+        if (normalized) {
+          handleApplyDirection(normalized);
+        }
+      };
+
+      const getAvailableDirections = () => {
+        const source = SOURCES[currentSource];
+        return Object.keys(source.directions || {});
+      };
+
+      if (!storyboard) {
+        return <div style={{ padding: '2rem', color: 'var(--text)' }}>Loading...</div>;
+      }
+
+      const totalDuration = storyboard.shots.reduce((sum, shot) => sum + shot.duration, 0);
+
+      return (
+        <div className="stepbystep-container">
+          <style>{`
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+              background: var(--bg);
+              color: var(--text);
+              line-height: 1.6;
+              transition: background-color 0.4s ease, color 0.4s ease;
+            }
+            .stepbystep-container { min-height: 100vh; padding-bottom: 140px; }
+            .header {
+              background: var(--surface);
+              border-bottom: 1px solid var(--border-subtle);
+              padding: 1.5rem 2rem;
+              position: sticky;
+              top: 0;
+              z-index: 100;
+            }
+            .header-top {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 1rem;
+            }
+            .header-title { display: flex; flex-direction: column; gap: 0.25rem; }
+            .title { font-size: 1.5rem; font-weight: 700; }
+            .subtitle { font-size: 0.875rem; color: var(--text-secondary); }
+            .version-tag {
+              display: inline-block;
+              padding: 0.25rem 0.5rem;
+              background: var(--tag);
+              border: 1px solid var(--accent);
+              border-radius: 4px;
+              font-size: 0.75rem;
+              font-weight: 600;
+              color: var(--accent);
+              font-family: Monaco, monospace;
+            }
+            .theme-switcher { display: flex; gap: 0.5rem; }
+            .theme-button {
+              width: 40px;
+              height: 40px;
+              border: 2px solid transparent;
+              border-radius: 6px;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 0.625rem;
+              font-weight: 700;
+              color: white;
+              font-family: Monaco, monospace;
+            }
+            .theme-button:hover { transform: scale(1.1); border-color: var(--accent); }
+            .theme-button.active {
+              border-color: var(--accent);
+              box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+            }
+            .theme-button.flyers { background: #F74902; }
+            .theme-button.claude { background: #DA7756; }
+            .theme-button.amazon { background: #FF9900; }
+            .source-tabs { display: flex; gap: 0.5rem; }
+            .source-tab {
+              padding: 0.5rem 1rem;
+              background: transparent;
+              border: none;
+              border-bottom: 2px solid transparent;
+              color: var(--text-secondary);
+              cursor: pointer;
+              font-size: 0.875rem;
+              font-weight: 500;
+              transition: all 0.3s ease;
+            }
+            .source-tab:hover { color: var(--text); background: var(--bg-alt); }
+            .source-tab.active {
+              color: var(--accent);
+              border-bottom-color: var(--accent);
+              background: var(--bg-alt);
+            }
+            .main-content {
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 2rem;
+              opacity: 1;
+              transition: opacity 0.4s ease;
+            }
+            .main-content.transitioning { opacity: 0.12; }
+            .input-bar {
+              position: fixed;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background: var(--surface);
+              border-top: 1px solid var(--border-subtle);
+              padding: 1rem 2rem;
+              z-index: 100;
+            }
+            .input-bar::before {
+              content: '';
+              position: absolute;
+              top: -40px;
+              left: 0;
+              right: 0;
+              height: 40px;
+              background: var(--gradient);
+              pointer-events: none;
+            }
+            .direction-form {
+              max-width: 900px;
+              margin: 0 auto;
+              display: flex;
+              gap: 0.75rem;
+              margin-bottom: 0.75rem;
+            }
+            .direction-input {
+              flex: 1;
+              padding: 0.75rem 1rem;
+              background: var(--input-bg);
+              border: 1px solid var(--border-subtle);
+              border-radius: 6px;
+              color: var(--text);
+              font-size: 0.875rem;
+            }
+            .direction-input:focus {
+              outline: none;
+              border-color: var(--accent);
+              box-shadow: 0 0 0 3px var(--border);
+            }
+            .direction-submit {
+              padding: 0.75rem 1.5rem;
+              background: var(--accent);
+              border: none;
+              border-radius: 6px;
+              color: white;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.2s ease;
+            }
+            .direction-submit:hover {
+              background: var(--accent-hover);
+              transform: translateY(-1px);
+            }
+            .direction-pills {
+              max-width: 900px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 0.5rem;
+            }
+            .direction-pill {
+              padding: 0.5rem 1rem;
+              background: var(--pill);
+              border: 1px solid var(--pill-border);
+              border-radius: 20px;
+              color: var(--text);
+              font-size: 0.75rem;
+              font-weight: 500;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              text-transform: capitalize;
+            }
+            .direction-pill:hover {
+              background: var(--accent);
+              border-color: var(--accent);
+              color: white;
+              transform: translateY(-2px);
+            }
+            .direction-history {
+              margin-bottom: 2rem;
+              padding: 1rem;
+              background: var(--surface);
+              border: 1px solid var(--border-subtle);
+              border-radius: 6px;
+              font-family: Monaco, monospace;
+              font-size: 0.75rem;
+              color: var(--text-secondary);
+            }
+            .direction-history-path {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              flex-wrap: wrap;
+            }
+            .direction-history-item { color: var(--text-muted); }
+            .direction-history-item.current {
+              color: var(--accent);
+              font-weight: 700;
+            }
+            .direction-history-arrow { color: var(--text-dim); }
+            .content-section {
+              background: var(--surface);
+              border: 1px solid var(--border-subtle);
+              border-radius: 8px;
+              padding: 2rem;
+              margin-bottom: 2rem;
+            }
+            .section-title {
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--accent);
+              margin-bottom: 1rem;
+            }
+            .section-subtitle {
+              font-family: Monaco, monospace;
+              font-size: 0.75rem;
+              color: var(--text-muted);
+              margin-bottom: 1.5rem;
+            }
+            .concept-text {
+              color: var(--text-secondary);
+              line-height: 1.8;
+              margin-bottom: 2rem;
+            }
+            .shot-card {
+              margin-bottom: 1.5rem;
+              padding-bottom: 1.5rem;
+              border-bottom: 1px solid var(--border-subtle);
+            }
+            .shot-card:last-child { border-bottom: none; }
+            .shot-header {
+              font-family: Monaco, monospace;
+              color: var(--accent);
+              font-weight: 700;
+              margin-bottom: 0.75rem;
+              font-size: 0.875rem;
+            }
+            .shot-field {
+              margin-bottom: 0.5rem;
+              display: flex;
+              gap: 0.5rem;
+            }
+            .shot-label {
+              font-weight: 600;
+              color: var(--text);
+              min-width: 100px;
+            }
+            .shot-value {
+              color: var(--text-secondary);
+              flex: 1;
+            }
+            .invisible-wide {
+              background: var(--bg-alt);
+              padding: 1.5rem;
+              border-radius: 6px;
+              border-left: 3px solid var(--accent);
+              margin-bottom: 2rem;
+            }
+            .invisible-wide-title {
+              font-size: 0.875rem;
+              font-weight: 700;
+              color: var(--accent);
+              margin-bottom: 0.5rem;
+              font-style: italic;
+            }
+            .invisible-wide-text {
+              color: var(--text-secondary);
+              font-style: italic;
+              line-height: 1.7;
+            }
+            .storm-cloud {
+              background: var(--bg-alt);
+              padding: 1.5rem;
+              border-radius: 6px;
+              margin-bottom: 2rem;
+            }
+            .storm-cloud-title {
+              font-size: 0.875rem;
+              font-weight: 700;
+              color: var(--text);
+              margin-bottom: 0.75rem;
+            }
+            .storm-cloud-detail {
+              color: var(--text-secondary);
+              margin-bottom: 0.75rem;
+            }
+            .storm-cloud-rating {
+              display: inline-block;
+              padding: 0.25rem 0.75rem;
+              border-radius: 4px;
+              font-size: 0.75rem;
+              font-weight: 700;
+              font-family: Monaco, monospace;
+            }
+            .rating-INVISIBLE {
+              background: var(--rating-good);
+              color: white;
+            }
+            .rating-WELL-HIDDEN {
+              background: var(--rating-mid);
+              color: white;
+            }
+            .rating-TOO-OBVIOUS {
+              background: var(--rating-bad);
+              color: white;
+            }
+            .platform-grid {
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 1rem;
+            }
+            .platform-item {
+              background: var(--bg-alt);
+              padding: 1rem;
+              border-radius: 6px;
+            }
+            .platform-label {
+              font-size: 0.75rem;
+              font-weight: 700;
+              color: var(--text-muted);
+              text-transform: uppercase;
+              margin-bottom: 0.5rem;
+            }
+            .platform-value {
+              color: var(--text-secondary);
+              font-size: 0.875rem;
+            }
+          `}</style>
+
+          <header className="header">
+            <div className="header-top">
+              <div className="header-title">
+                <h1 className="title">StepByStep Direct</h1>
+                <p className="subtitle">
+                  {SOURCES[currentSource].label} • {SOURCES[currentSource].subtitle}
+                </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                <span className="version-tag">v1.0</span>
+                <div className="theme-switcher">
+                  {Object.keys(themes).map(key => (
+                    <button
+                      key={key}
+                      className={`theme-button ${key} ${currentTheme === key ? 'active' : ''}`}
+                      onClick={() => handleThemeChange(key)}
+                      title={themes[key].name}
+                    >
+                      {themes[key].abbr}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="source-tabs">
+              {Object.keys(SOURCES).map(key => (
+                <button
+                  key={key}
+                  className={`source-tab ${currentSource === key ? 'active' : ''}`}
+                  onClick={() => handleSourceChange(key)}
+                >
+                  {SOURCES[key].label}
+                </button>
+              ))}
+            </div>
+          </header>
+
+          <main className={`main-content ${isTransitioning ? 'transitioning' : ''}`}>
+            {storyboard.directionHistory && storyboard.directionHistory.length > 0 && (
+              <div className="direction-history">
+                <div className="direction-history-path">
+                  <span className="direction-history-item">baseline</span>
+                  {storyboard.directionHistory.map((dir, index) => (
+                    <React.Fragment key={index}>
+                      <span className="direction-history-arrow">→</span>
+                      <span className={`direction-history-item ${index === storyboard.directionHistory.length - 1 ? 'current' : ''}`}>
+                        {dir}
+                      </span>
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <div className="content-section">
+              <h2 className="section-title">Concept</h2>
+              <p className="concept-text">{storyboard.concept}</p>
+
+              <h2 className="section-title">Shots</h2>
+              <p className="section-subtitle">
+                {storyboard.shots.length} shots • {totalDuration} seconds total
+              </p>
+
+              {storyboard.shots.map(shot => (
+                <div key={shot.id} className="shot-card">
+                  <div className="shot-header">
+                    Shot {shot.id} • {shot.duration}s
+                  </div>
+                  <div className="shot-field">
+                    <span className="shot-label">Frame:</span>
+                    <span className="shot-value">{shot.frame}</span>
+                  </div>
+                  <div className="shot-field">
+                    <span className="shot-label">Audio:</span>
+                    <span className="shot-value">{shot.audio}</span>
+                  </div>
+                  <div className="shot-field">
+                    <span className="shot-label">Value Shift:</span>
+                    <span className="shot-value">{shot.valueShift}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="invisible-wide">
+              <div className="invisible-wide-title">Invisible Wide</div>
+              <div className="invisible-wide-text">{storyboard.invisibleWide}</div>
+            </div>
+
+            <div className="storm-cloud">
+              <div className="storm-cloud-title">Storm Cloud</div>
+              <div className="storm-cloud-detail">{storyboard.stormCloud.detail}</div>
+              <span className={`storm-cloud-rating rating-${storyboard.stormCloud.rating.replace(/-/g, '-')}`}>
+                {storyboard.stormCloud.rating}
+              </span>
+            </div>
+
+            {storyboard.platform && (
+              <div className="content-section">
+                <h2 className="section-title">Platform Notes</h2>
+                <div className="platform-grid">
+                  <div className="platform-item">
+                    <div className="platform-label">Length</div>
+                    <div className="platform-value">{storyboard.platform.length}</div>
+                  </div>
+                  <div className="platform-item">
+                    <div className="platform-label">Hook</div>
+                    <div className="platform-value">{storyboard.platform.hook}</div>
+                  </div>
+                  <div className="platform-item">
+                    <div className="platform-label">Loop</div>
+                    <div className="platform-value">{storyboard.platform.loop}</div>
+                  </div>
+                  <div className="platform-item">
+                    <div className="platform-label">Sound Off</div>
+                    <div className="platform-value">{storyboard.platform.soundOff}</div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </main>
+
+          <div className="input-bar">
+            <form className="direction-form" onSubmit={handleDirectionSubmit}>
+              <input
+                type="text"
+                className="direction-input"
+                placeholder="Enter direction (e.g., darker, funnier, tender)..."
+                value={directionInput}
+                onChange={(e) => setDirectionInput(e.target.value)}
+              />
+              <button type="submit" className="direction-submit">
+                Direct
+              </button>
+            </form>
+
+            <div className="direction-pills">
+              {getAvailableDirections()
+                .filter(dir => dir !== currentDirection)
+                .map(dir => (
+                  <button
+                    key={dir}
+                    className="direction-pill"
+                    onClick={() => handleApplyDirection(dir)}
+                  >
+                    {dir}
+                  </button>
+                ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Render
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<StepByStepDirect />);
+  </script>
+</body>
+</html>

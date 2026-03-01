@@ -1,0 +1,298 @@
+{
+  "label": "Jesse & The Mechanic",
+  "subtitle": "Auto shop / Late afternoon",
+  "baseline": {
+    "concept": "A young driver brings their car in for what seems like a routine check, but the mechanic's knowing glance at the dashboard reveals a deeper story about neglect, consequences, and the cost of ignoring warning signs.",
+    "shots": [
+      {
+        "id": 1,
+        "frame": "CU: Jesse's hands gripping the steering wheel, knuckles white, dashboard warning lights glowing red in the background blur",
+        "audio": "Engine rattling, warning chime beeping insistently",
+        "duration": 5,
+        "valueShift": "Anxiety → Dread"
+      },
+      {
+        "id": 2,
+        "frame": "MCU: Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting",
+        "audio": "Engine sputters to silence, distant pneumatic tools",
+        "duration": 5,
+        "valueShift": "False confidence → Exposure"
+      },
+      {
+        "id": 3,
+        "frame": "CU: Mechanic's weathered hands opening the hood, steam rising, a slight head shake",
+        "audio": "Hood latch click, hiss of escaping pressure, heavy sigh",
+        "duration": 5,
+        "valueShift": "Hope → Reality"
+      },
+      {
+        "id": 4,
+        "frame": "ECU: Mechanic's eyes meeting Jesse's through the gap above the raised hood, no judgment, just truth",
+        "audio": "Silence except distant radio, then: 'How long has it been like this?'",
+        "duration": 5,
+        "valueShift": "Denial → Admission"
+      },
+      {
+        "id": 5,
+        "frame": "CU: Jesse's face, looking down, then slowly back up, a small nod of acknowledgment",
+        "audio": "Quiet admission: 'A while.' Pause. 'Too long.'",
+        "duration": 5,
+        "valueShift": "Shame → Acceptance"
+      },
+      {
+        "id": 6,
+        "frame": "MCU: Mechanic's hand on Jesse's shoulder, gentle but firm, both standing by the open hood",
+        "audio": "'We'll figure it out. But you gotta listen to the signs next time.'",
+        "duration": 5,
+        "valueShift": "Isolation → Connection"
+      }
+    ],
+    "invisibleWide": "This isn't just about a car. Jesse's been ignoring warning signs in their life for months—relationships, health, responsibilities. The mechanic represents the moment when avoidance meets consequence, but also the possibility of repair.",
+    "stormCloud": {
+      "detail": "The dashboard warning lights have been on for three months. Jesse kept covering them with a sticky note.",
+      "rating": "WELL-HIDDEN"
+    },
+    "platform": {
+      "length": "30 seconds",
+      "hook": "Opening shot of white knuckles and red warning lights immediately signals tension",
+      "loop": "Yes — the circular nature of ignoring problems creates natural replay curiosity",
+      "soundOff": "Strong — visual storytelling through hands, eyes, and warning lights carries the narrative"
+    }
+  },
+  "directions": {
+    "funnier": {
+      "label": "Funnier",
+      "concept": "A young driver brings their car in for what seems like a routine check, but the mechanic's deadpan reactions to the absurd state of neglect turn a tense moment into a comedy of automotive denial.",
+      "shotOverrides": {
+        "3": {
+          "frame": "CU: Mechanic's weathered hands opening the hood, steam rising, a long pause, then pulling out a sticky note covering the warning lights",
+          "audio": "Hood latch click, hiss of pressure, then: 'Is this... is this a Post-it?'",
+          "valueShift": "Hope → Absurdity"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's face, eyebrows raised to maximum height, looking at Jesse with theatrical disbelief",
+          "audio": "'Three months?' Long pause. 'THREE MONTHS?!'",
+          "valueShift": "Denial → Comic Revelation"
+        },
+        "6": {
+          "frame": "MCU: Mechanic gesturing wildly at the engine, Jesse trying not to laugh, both shaking their heads",
+          "audio": "'Next time maybe try... I don't know... NOT covering the problem with office supplies?'",
+          "valueShift": "Shame → Shared Laughter"
+        }
+      },
+      "stormCloud": {
+        "detail": "The sticky note covering the warning lights has a smiley face drawn on it.",
+        "rating": "TOO OBVIOUS"
+      }
+    },
+    "darker": {
+      "label": "Darker",
+      "concept": "A young driver brings their car in knowing it's too late, and the mechanic's silence confirms what they both understand: some damage can't be undone, some warnings ignored too long.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Jesse's face through windshield, no smile, just hollow acceptance, eyes already knowing",
+          "audio": "Engine dies with a final shudder, then oppressive silence",
+          "valueShift": "Resignation → Void"
+        },
+        "3": {
+          "frame": "CU: Mechanic's hands opening hood, revealing catastrophic damage, hands pause mid-air",
+          "audio": "Hood opens to reveal grinding metal sounds, something broken beyond repair",
+          "valueShift": "Faint hope → Finality"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes meeting Jesse's, a look that says 'I'm sorry' without words",
+          "audio": "Complete silence. No question asked. None needed.",
+          "valueShift": "Question → Answer"
+        },
+        "6": {
+          "frame": "MCU: Mechanic's hand hovering near Jesse's shoulder but not touching, both staring at the engine",
+          "audio": "Distant traffic. Wind. The weight of too-late.",
+          "valueShift": "Connection → Solitude"
+        }
+      },
+      "invisibleWide": "Jesse knew it was terminal weeks ago. This visit isn't about repair—it's about hearing someone else confirm what they've been too afraid to admit. The car is a metaphor for something else they've lost.",
+      "stormCloud": {
+        "detail": "Jesse's phone has 47 unread messages from someone named 'Mom.' The last one is from two weeks ago.",
+        "rating": "INVISIBLE"
+      }
+    },
+    "tender": {
+      "label": "Tender",
+      "concept": "A young driver brings their car in afraid of judgment, but finds unexpected kindness in a mechanic who sees past the neglect to the person struggling beneath it.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands on steering wheel, trembling slightly, a deep breath visible in shoulder movement",
+          "audio": "Engine rattling, but also Jesse's shaky exhale, gathering courage",
+          "valueShift": "Fear → Vulnerability"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes, soft with understanding, a small reassuring nod before speaking",
+          "audio": "Gentle: 'Hey. It's okay. We all get overwhelmed sometimes.'",
+          "valueShift": "Bracing for judgment → Unexpected grace"
+        },
+        "5": {
+          "frame": "CU: Jesse's face, eyes welling up, a grateful smile breaking through",
+          "audio": "Voice cracking: 'I didn't know who else to ask.' Pause. 'Thank you.'",
+          "valueShift": "Shame → Relief"
+        },
+        "6": {
+          "frame": "MCU: Mechanic's hand on Jesse's shoulder, both looking at the engine together, a team now",
+          "audio": "'One step at a time. We'll get through this together.'",
+          "valueShift": "Alone → Supported"
+        }
+      },
+      "invisibleWide": "Jesse's been carrying more than car trouble—job loss, family illness, depression. The mechanic recognizes the signs of someone drowning and offers a lifeline disguised as car repair.",
+      "stormCloud": {
+        "detail": "There's a hospital parking pass on Jesse's dashboard from six months of daily visits.",
+        "rating": "WELL-HIDDEN"
+      },
+      "platform": {
+        "length": "30 seconds",
+        "hook": "Trembling hands and a deep breath signal emotional stakes beyond automotive",
+        "loop": "Yes — the emotional journey invites rewatching for the tender moments",
+        "soundOff": "Moderate — facial expressions carry emotion, but dialogue adds crucial context"
+      }
+    },
+    "surreal": {
+      "label": "Surreal",
+      "concept": "A young driver brings their car to a mechanic who seems to understand that the vehicle's problems are manifestations of something stranger—warnings from a reality that's starting to glitch.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands on wheel, but the warning lights flicker in impossible patterns, spelling words",
+          "audio": "Engine sounds layered with reversed whispers, warning chimes in musical sequence",
+          "valueShift": "Confusion → Unreality"
+        },
+        "3": {
+          "frame": "CU: Mechanic's hands opening hood, but steam forms shapes—faces, symbols, dissolving",
+          "audio": "Hood opens with a sound like tearing fabric, steam hisses in rhythm",
+          "valueShift": "Expectation → Otherworldly"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes reflecting the engine, but the reflection shows something else entirely—stars, void",
+          "audio": "'This isn't about the car, is it?' Voice echoes slightly, doubled",
+          "valueShift": "Question → Cosmic awareness"
+        },
+        "5": {
+          "frame": "CU: Jesse's face, but their features subtly shift, flicker, like a signal losing reception",
+          "audio": "Jesse's voice layered with static: 'I don't know what's real anymore.'",
+          "valueShift": "Identity → Dissolution"
+        },
+        "6": {
+          "frame": "MCU: Both standing by the hood, but the background warps, bends, the shop becoming somewhere else",
+          "audio": "'The signs were never about the car. They were about waking up.'",
+          "valueShift": "Reality → Transcendence"
+        }
+      },
+      "invisibleWide": "The auto shop exists in a liminal space between worlds. The mechanic is a guide for those whose warning lights are actually messages from their subconscious trying to break through consensus reality.",
+      "stormCloud": {
+        "detail": "Every clock in the shop shows a different time. None of them are moving.",
+        "rating": "WELL-HIDDEN"
+      }
+    },
+    "minimalist": {
+      "label": "Minimalist",
+      "concept": "Warning lights. A hood opens. Eyes meet. Truth spoken. Nothing more needed.",
+      "shots": [
+        {
+          "id": 1,
+          "frame": "ECU: Red warning light glowing on black dashboard",
+          "audio": "Single warning chime. Silence.",
+          "duration": 5,
+          "valueShift": "Signal → Attention"
+        },
+        {
+          "id": 2,
+          "frame": "CU: Hood latch releasing, hands in frame",
+          "audio": "Click. Creak. Hiss.",
+          "duration": 5,
+          "valueShift": "Closed → Open"
+        },
+        {
+          "id": 3,
+          "frame": "ECU: Two pairs of eyes across the engine bay",
+          "audio": "Breathing. Distant traffic.",
+          "duration": 5,
+          "valueShift": "Separate → Connected"
+        },
+        {
+          "id": 4,
+          "frame": "CU: Single hand gesture toward the engine",
+          "audio": "'How long?' Pause. 'Too long.'",
+          "duration": 5,
+          "valueShift": "Question → Answer"
+        },
+        {
+          "id": 5,
+          "frame": "MCU: Two figures, silhouettes against bright shop door",
+          "audio": "'We'll fix it.' Footsteps.",
+          "duration": 5,
+          "valueShift": "Problem → Solution"
+        }
+      ],
+      "invisibleWide": "Everything unnecessary removed. Only the essential exchange remains.",
+      "stormCloud": {
+        "detail": "The warning light is the only color in the entire piece.",
+        "rating": "INVISIBLE"
+      },
+      "platform": {
+        "length": "25 seconds",
+        "hook": "Single red light on black—immediate visual hook",
+        "loop": "Yes — minimalism invites repeated viewing to catch details",
+        "soundOff": "Excellent — pure visual storytelling"
+      }
+    },
+    "operatic": {
+      "label": "Operatic",
+      "concept": "A young driver's arrival at the auto shop becomes an epic confrontation with fate itself, where a mechanic serves as both judge and potential savior in a battle against the consequences of willful ignorance.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Jesse's hands clutching the wheel like a ship's captain in a storm, warning lights blazing like fire",
+          "audio": "Engine roaring like a wounded beast, warning chimes building to crescendo",
+          "duration": 9,
+          "valueShift": "Defiance → Reckoning"
+        },
+        "2": {
+          "frame": "MCU: Jesse emerging from the car in slow motion, shop looming like a cathedral, mechanic silhouetted in doorway",
+          "audio": "Engine death rattle echoes, footsteps heavy as a funeral march",
+          "duration": 9,
+          "valueShift": "Pride → Humility"
+        },
+        "3": {
+          "frame": "CU: Hood thrown open dramatically, steam erupting like a volcano, mechanic's face illuminated from below",
+          "audio": "Hood crashes open, steam roars, then sudden silence—the calm before judgment",
+          "duration": 9,
+          "valueShift": "Revelation → Judgment"
+        },
+        "4": {
+          "frame": "ECU: Mechanic's eyes boring into Jesse's soul, the weight of truth unbearable",
+          "audio": "'How long?' Voice like thunder. Long pause. 'HOW LONG?!' Echo.",
+          "duration": 9,
+          "valueShift": "Interrogation → Confession"
+        },
+        "5": {
+          "frame": "CU: Jesse falling to their knees beside the car, hands covering face, mechanic standing above",
+          "audio": "Jesse's voice breaking: 'I knew. God help me, I knew.' Wind howls.",
+          "duration": 9,
+          "valueShift": "Denial → Catharsis"
+        },
+        "6": {
+          "frame": "MCU: Mechanic extending hand to lift Jesse up, backlit by setting sun streaming through shop door",
+          "audio": "'Then we begin again. Together.' Swelling ambient sound, hope rising.",
+          "duration": 9,
+          "valueShift": "Despair → Redemption"
+        }
+      },
+      "invisibleWide": "This is not a car repair. This is a morality play about the human condition—our capacity for self-deception, the inevitability of consequence, and the possibility of grace. The auto shop is a stage for the eternal drama of fall and redemption.",
+      "stormCloud": {
+        "detail": "The mechanic's name tag reads 'Gabriel.' The shop is called 'Last Chance Auto.'",
+        "rating": "TOO OBVIOUS"
+      },
+      "platform": {
+        "length": "54 seconds",
+        "hook": "Dramatic hands on wheel with blazing warning lights—immediate epic scale",
+        "loop": "No — too emotionally exhausting for immediate replay",
+        "soundOff": "Poor — the operatic audio is essential to the experience"
+      }
+    }
+  }
+}

@@ -1,0 +1,495 @@
+=== JESSE & THE MECHANIC - ALL DIRECTIONS ===
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_baseline.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  30s
+
+Previz (540p):   $22.50
+Full (720p):     $45.00
+
+Selected mode:   previz
+Estimated cost:  $22.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_baseline
+Direction:   baseline
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 30s
+Cost:        $22.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands gripping the steering wheel, knuckles white, dashboard warning lights glowing red in the background blur
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Mechanic's weathered hands opening the hood, steam rising, a slight head shake
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's eyes meeting Jesse's through the gap above the raised hood, no judgment, just truth
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's face, looking down, then slowly back up, a small nod of acknowledgment
+
+Shot 6 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Mechanic's hand on Jesse's shoulder, gentle but firm, both standing by the open hood
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_darker.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  30s
+
+Previz (540p):   $22.50
+Full (720p):     $45.00
+
+Selected mode:   previz
+Estimated cost:  $22.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_darker
+Direction:   darker
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 30s
+Cost:        $22.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands gripping the steering wheel, knuckles white, dashboard warning lights glowing red in the background blur
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse's face through windshield, no smile, just hollow acceptance, eyes already knowing
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Mechanic's hands opening hood, revealing catastrophic damage, hands pause mid-air
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's eyes meeting Jesse's, a look that says 'I'm sorry' without words
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's face, looking down, then slowly back up, a small nod of acknowledgment
+
+Shot 6 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Mechanic's hand hovering near Jesse's shoulder but not touching, both staring at the engine
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_funnier.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  30s
+
+Previz (540p):   $22.50
+Full (720p):     $45.00
+
+Selected mode:   previz
+Estimated cost:  $22.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_funnier
+Direction:   funnier
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 30s
+Cost:        $22.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands gripping the steering wheel, knuckles white, dashboard warning lights glowing red in the background blur
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Mechanic's weathered hands opening the hood, steam rising, a long pause, then pulling out a sticky note covering the warning lights
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's face, eyebrows raised to maximum height, looking at Jesse with theatrical disbelief
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's face, looking down, then slowly back up, a small nod of acknowledgment
+
+Shot 6 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Mechanic gesturing wildly at the engine, Jesse trying not to laugh, both shaking their heads
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_tender.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  30s
+
+Previz (540p):   $22.50
+Full (720p):     $45.00
+
+Selected mode:   previz
+Estimated cost:  $22.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_tender
+Direction:   tender
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 30s
+Cost:        $22.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands on steering wheel, trembling slightly, a deep breath visible in shoulder movement
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Mechanic's weathered hands opening the hood, steam rising, a slight head shake
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's eyes, soft with understanding, a small reassuring nod before speaking
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's face, eyes welling up, a grateful smile breaking through
+
+Shot 6 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Mechanic's hand on Jesse's shoulder, both looking at the engine together, a team now
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_surreal.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  30s
+
+Previz (540p):   $22.50
+Full (720p):     $45.00
+
+Selected mode:   previz
+Estimated cost:  $22.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_surreal
+Direction:   surreal
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 30s
+Cost:        $22.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands on wheel, but the warning lights flicker in impossible patterns, spelling words
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse's face through windshield as they pull into the auto shop, forced smile, eyes darting
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Mechanic's hands opening hood, but steam forms shapes—faces, symbols, dissolving
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's eyes reflecting the engine, but the reflection shows something else entirely—stars, void
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's face, but their features subtly shift, flicker, like a signal losing reception
+
+Shot 6 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Both standing by the hood, but the background warps, bends, the shop becoming somewhere else
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_minimalist.json
+✓ Parsed 5 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      5
+Total duration:  25s
+
+Previz (540p):   $18.75
+Full (720p):     $37.50
+
+Selected mode:   previz
+Estimated cost:  $18.75
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_minimalist
+Direction:   minimalist
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  5
+API seconds: 25s
+Cost:        $18.75
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Red warning light glowing on black dashboard
+
+Shot 2 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Hood latch releasing, hands in frame
+
+Shot 3 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Two pairs of eyes across the engine bay
+
+Shot 4 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Single hand gesture toward the engine
+
+Shot 5 (5s → 5s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Two figures, silhouettes against bright shop door
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+
+
+============================================================
+STEPBYSTEP DIRECT - RENDER PIPELINE
+============================================================
+
+✓ Loaded storyboard: output_jesse_operatic.json
+✓ Parsed 6 shots
+
+============================================================
+COST ESTIMATE
+============================================================
+Shot count:      6
+Total duration:  54s
+
+Previz (540p):   $40.50
+Full (720p):     $81.00
+
+Selected mode:   previz
+Estimated cost:  $40.50
+============================================================
+
+
+============================================================
+DRY RUN MODE
+============================================================
+Source:      output_jesse_operatic
+Direction:   operatic
+Model:       luma.ray-v2:0
+Region:      us-west-2
+Resolution:  previz
+============================================================
+
+Shot count:  6
+API seconds: 54s
+Cost:        $40.50
+
+============================================================
+SHOT PROMPTS
+============================================================
+
+Shot 1 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse's hands clutching the wheel like a ship's captain in a storm, warning lights blazing like fire
+
+Shot 2 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Jesse emerging from the car in slow motion, shop looming like a cathedral, mechanic silhouetted in doorway
+
+Shot 3 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Hood thrown open dramatically, steam erupting like a volcano, mechanic's face illuminated from below
+
+Shot 4 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Extreme close-up, filling the vertical frame edge to edge. Mechanic's eyes boring into Jesse's soul, the weight of truth unbearable
+
+Shot 5 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Close-up, face and shoulders filling the vertical frame. Jesse falling to their knees beside the car, hands covering face, mechanic standing above
+
+Shot 6 (9s → 9s)
+  Mode: text-to-video
+  Prompt: Cinematic vertical 9:16 short film shot. Shallow depth of field. Film grain. Natural lighting. No text overlays. No UI elements. Medium close-up, waist-up in vertical frame. Mechanic extending hand to lift Jesse up, backlit by setting sun streaming through shop door
+
+============================================================
+Dry run complete. No API calls made.
+============================================================
+
+
+---
+

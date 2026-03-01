@@ -1,0 +1,179 @@
+{
+  "label": "StepbyStep:ROBOTICS Demo",
+  "subtitle": "Home Studio / Morning Light",
+  "baseline": {
+    "concept": "A person flows through yoga poses while a humanoid robot mirrors their movements in real-time. Dashboard overlays reveal the invisible intelligence: StateObserver tracking body positions, ActionTranslator compiling human motion into robot commands, ExecutionTracker monitoring the synchronization, EvaluationEngine scoring performance, and RegressionDetector learning from each session. This is the embodiment compiler in action—yoga as calibration data, identity compiled into motion.",
+    "shots": [
+      {
+        "id": 1,
+        "frame": "Wide: Split screen - left shows person in warrior pose, right shows robot mirroring perfectly, morning light streaming through windows",
+        "audio": "Gentle breathing, soft mechanical servo sounds harmonizing",
+        "duration": 6,
+        "valueShift": "Separation → Synchronization"
+      },
+      {
+        "id": 2,
+        "frame": "CU: Person's hands moving into prayer position, dashboard overlay appears showing StateObserver data: joint angles, confidence scores, normalized coordinates",
+        "audio": "Soft UI beep, data streaming sound, breath continues",
+        "duration": 5,
+        "valueShift": "Movement → Data"
+      },
+      {
+        "id": 3,
+        "frame": "CU: Robot's hands mirroring the prayer position, ActionTranslator overlay shows: 'Compiling gesture... confidence: 0.94, executing: HAND_POSITION_PRAYER'",
+        "audio": "Precise servo movements, compilation complete chime",
+        "duration": 5,
+        "valueShift": "Data → Action"
+      },
+      {
+        "id": 4,
+        "frame": "MCU: Side-by-side comparison as person transitions to tree pose, ExecutionTracker overlay shows real-time sync metrics, anomaly detection graphs, step progress",
+        "audio": "Synchronized movement sounds, tracking beeps in rhythm",
+        "duration": 6,
+        "valueShift": "Individual → Unified"
+      },
+      {
+        "id": 5,
+        "frame": "ECU: Person's face in concentration, then breaking into a smile as they see the robot perfectly balanced beside them",
+        "audio": "Breath steadying, a small laugh of delight",
+        "duration": 5,
+        "valueShift": "Effort → Joy"
+      },
+      {
+        "id": 6,
+        "frame": "Wide: Both completing the flow together, EvaluationEngine overlay shows: 'Session complete. Accuracy: 96.2%. Improvement: +3.1% from baseline.' RegressionDetector: 'New baseline established.'",
+        "audio": "Final exhale in unison, success chime, systems powering down gently",
+        "duration": 6,
+        "valueShift": "Performance → Learning"
+      }
+    ],
+    "invisibleWide": "This isn't just motion capture—it's a personal embodiment compiler. Every yoga session becomes calibration data. The person's unique movement signature compiles into robot parameters. StepbyStep transforms 'the self into motion,' making home robotics as personal as a fingerprint. The robot doesn't just copy—it learns, adapts, and becomes an extension of the person's physical identity.",
+    "stormCloud": {
+      "detail": "The dashboard shows 'Session #47' in the corner. This person has been teaching their robot for weeks. The improvement curve is exponential.",
+      "rating": "WELL-HIDDEN"
+    },
+    "platform": {
+      "length": "33 seconds",
+      "hook": "Split screen of human and robot in perfect sync immediately shows the magic",
+      "loop": "Yes — the satisfying synchronization invites repeated viewing",
+      "soundOff": "Strong — visual storytelling through movement and dashboard overlays carries the narrative"
+    }
+  },
+  "directions": {
+    "technical": {
+      "label": "Technical Deep Dive",
+      "concept": "Same yoga mirroring demo, but dashboard overlays are more prominent, showing the actual data structures, algorithms, and metrics flowing through the system in real-time.",
+      "shotOverrides": {
+        "2": {
+          "frame": "CU: Person's hands with prominent StateObserver overlay showing: JSON data structure with joint coordinates, confidence matrices, normalization algorithms running",
+          "audio": "Data streaming sounds more prominent, keyboard typing rhythm underneath",
+          "valueShift": "Movement → Code"
+        },
+        "3": {
+          "frame": "CU: Robot's hands with ActionTranslator overlay showing: actual Python function calls, confidence scoring algorithm, command queue, execution pipeline",
+          "audio": "Compilation sounds, function call beeps, servo commands being issued",
+          "valueShift": "Code → Execution"
+        },
+        "4": {
+          "frame": "MCU: Split screen with ExecutionTracker showing: anomaly detection graphs, statistical process control charts, step execution timeline, safety constraint validation",
+          "audio": "Multiple system beeps, data processing sounds layered",
+          "valueShift": "Execution → Monitoring"
+        },
+        "6": {
+          "frame": "Wide: Final pose with full dashboard showing all components: StateObserver → ActionTranslator → ExecutionTracker → EvaluationEngine → RegressionDetector, data flowing between them",
+          "audio": "System completion sound, all components reporting success in sequence",
+          "valueShift": "Monitoring → System Intelligence"
+        }
+      },
+      "invisibleWide": "For developers and technical audiences, this reveals the architecture: three layers (Behavior, Workflow, Improvement), six core components, 28 correctness properties being validated in real-time. This is production-grade robotics observability.",
+      "stormCloud": {
+        "detail": "The RegressionDetector shows it's running statistical tests on 296 properties. All passing.",
+        "rating": "INVISIBLE"
+      }
+    },
+    "cinematic": {
+      "label": "Cinematic",
+      "concept": "The yoga mirroring becomes a meditation on human-machine connection, shot like a high-end tech commercial with dramatic lighting and minimal UI.",
+      "shotOverrides": {
+        "1": {
+          "frame": "Wide: Dramatic low angle, person and robot silhouetted against floor-to-ceiling windows, golden morning light, movements perfectly synchronized like a dance",
+          "audio": "Cinematic ambient music begins, breath and servos become rhythmic percussion",
+          "duration": 8,
+          "valueShift": "Technology → Art"
+        },
+        "2": {
+          "frame": "CU: Person's hands in slow motion, light catching fingertips, minimal dashboard overlay fades in elegantly",
+          "audio": "Music swells, breath slows, single UI tone",
+          "duration": 6,
+          "valueShift": "Data → Grace"
+        },
+        "5": {
+          "frame": "ECU: Person's face, eyes closed, serene, then opening to see the robot—a moment of genuine connection",
+          "audio": "Music peaks emotionally, breath catches, then releases",
+          "duration": 7,
+          "valueShift": "Solitude → Partnership"
+        },
+        "6": {
+          "frame": "Wide: Both in final pose, camera slowly orbits them, dashboard fades away, just two beings in perfect harmony",
+          "audio": "Music resolves, final breath together, gentle fade to silence",
+          "duration": 8,
+          "valueShift": "Technology → Transcendence"
+        }
+      },
+      "invisibleWide": "This is the future of human-robot collaboration—not cold and mechanical, but warm, personal, almost spiritual. Your body becomes the interface. Your movement becomes the language.",
+      "platform": {
+        "length": "40 seconds",
+        "hook": "Cinematic silhouette of human and robot in perfect sync",
+        "loop": "Yes — the beauty invites repeated viewing",
+        "soundOff": "Moderate — visuals are strong but music adds emotional impact"
+      }
+    },
+    "actor-pitch": {
+      "label": "Actor Pitch",
+      "concept": "Framed as a demo for actors skeptical of AI—showing how motion capture becomes a creative tool, not a replacement. The robot learns YOUR unique movement signature.",
+      "shotOverrides": {
+        "1": {
+          "frame": "Wide: Person (dressed like they're auditioning) flows through yoga, robot learning their specific style—not generic motion, but THEIR motion",
+          "audio": "Person's voice: 'This isn't replacing me. It's learning from me.'",
+          "duration": 7,
+          "valueShift": "Threat → Tool"
+        },
+        "2": {
+          "frame": "CU: Dashboard shows 'Learning [Actor Name]'s movement signature... Unique style markers detected: 47'",
+          "audio": "UI sounds, voice continues: 'Every person moves differently. This captures MY way.'",
+          "duration": 6,
+          "valueShift": "Generic → Personal"
+        },
+        "4": {
+          "frame": "MCU: Person does a unique flourish in the pose—robot mirrors it perfectly, capturing their artistic choice",
+          "audio": "Person laughs: 'It even got my weird hand thing! That's actually impressive.'",
+          "duration": 6,
+          "valueShift": "Skepticism → Recognition"
+        },
+        "5": {
+          "frame": "ECU: Person's face, genuinely impressed, nodding thoughtfully",
+          "audio": "'So this is local motion capture... I own this data. It's MY performance.'",
+          "duration": 5,
+          "valueShift": "Fear → Ownership"
+        },
+        "6": {
+          "frame": "Wide: Person and robot, text overlay: 'Your movement. Your data. Your control. StepbyStep:ROBOTICS'",
+          "audio": "'I could see using this for rehearsal, for choreography... for keeping my work mine.'",
+          "duration": 6,
+          "valueShift": "Replacement → Empowerment"
+        }
+      },
+      "invisibleWide": "This addresses the core fear: AI replacing creative workers. Instead, it shows AI as a tool that amplifies and preserves individual artistry. Local processing means actors own their motion data. The system learns their unique style, not a generic template.",
+      "stormCloud": {
+        "detail": "The dashboard shows 'Data stored locally. No cloud upload. You own this.' in small text.",
+        "rating": "WELL-HIDDEN"
+      },
+      "platform": {
+        "length": "36 seconds",
+        "hook": "Actor's skeptical voice immediately frames the tension",
+        "loop": "Yes — the transformation from skepticism to acceptance is satisfying",
+        "soundOff": "Poor — the voiceover is essential to the pitch"
+      }
+    }
+  }
+}

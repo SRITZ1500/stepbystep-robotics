@@ -1,0 +1,319 @@
+{
+  "label": "Changeless",
+  "subtitle": "Coffee shop / Morning routine",
+  "baseline": {
+    "concept": "A person orders the same coffee they've ordered every day for years, but today the barista asks a simple question that cracks open the comfortable prison of routine and forces a choice between safety and change.",
+    "shots": [
+      {
+        "id": 1,
+        "frame": "CU: Hands placing exact change on counter, coins arranged in the same pattern as always",
+        "audio": "Coins clink in familiar rhythm, espresso machine hissing in background",
+        "duration": 5,
+        "valueShift": "Comfort → Automation"
+      },
+      {
+        "id": 2,
+        "frame": "MCU: Customer's face, mouth opening to order before barista even looks up, the words rehearsed",
+        "audio": "'The usual—' but barista interrupts: 'Wait.'",
+        "duration": 5,
+        "valueShift": "Certainty → Disruption"
+      },
+      {
+        "id": 3,
+        "frame": "CU: Barista's hand hovering over the cup, marker poised, but not writing yet",
+        "audio": "'What if you tried something different today?' Pause. Espresso machine stops.",
+        "duration": 5,
+        "valueShift": "Routine → Possibility"
+      },
+      {
+        "id": 4,
+        "frame": "ECU: Customer's eyes widening slightly, a flicker of panic, then curiosity",
+        "audio": "Silence except distant cafe chatter, then: 'I... I don't know what else I'd want.'",
+        "duration": 5,
+        "valueShift": "Reflex → Awareness"
+      },
+      {
+        "id": 5,
+        "frame": "CU: Customer's hand reaching toward the menu board, fingers trembling slightly",
+        "audio": "Paper rustling, breath held, then: 'What do you recommend?'",
+        "duration": 5,
+        "valueShift": "Fear → Courage"
+      },
+      {
+        "id": 6,
+        "frame": "MCU: Barista smiling, writing a new name on the cup, customer watching with nervous anticipation",
+        "audio": "Marker squeaking on cup, then: 'Trust me. You're ready for this.'",
+        "duration": 5,
+        "valueShift": "Stagnation → Growth"
+      }
+    ],
+    "invisibleWide": "This isn't about coffee. It's about a life lived on autopilot, where every choice was made years ago and never reconsidered. The barista represents the voice that asks: what if you're not the same person you were when you made these choices?",
+    "stormCloud": {
+      "detail": "The customer has been ordering the same drink for 1,847 consecutive days. The barista has been counting.",
+      "rating": "WELL-HIDDEN"
+    },
+    "platform": {
+      "length": "30 seconds",
+      "hook": "Exact change in familiar pattern immediately signals routine about to break",
+      "loop": "Yes — the moment of choice invites reflection on viewer's own routines",
+      "soundOff": "Moderate — visual body language strong, but dialogue adds crucial context"
+    }
+  },
+  "directions": {
+    "funnier": {
+      "label": "Funnier",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista stages an intervention that's equal parts comedy and genuine concern about their customer's beverage monotony.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Customer's mouth opening, but barista holds up hand like a traffic cop, whistle around neck",
+          "audio": "'STOP. We need to talk about your relationship with medium roast.'",
+          "valueShift": "Routine → Intervention"
+        },
+        "3": {
+          "frame": "CU: Barista pulling out a chart labeled 'Days Since Last New Order: 1,847' with tally marks",
+          "audio": "'I've been tracking. This is... this is not healthy.'",
+          "valueShift": "Concern → Absurd Documentation"
+        },
+        "4": {
+          "frame": "ECU: Customer's face cycling through confusion, offense, then reluctant laughter",
+          "audio": "'Are you... are you seriously coffee-shaming me right now?'",
+          "valueShift": "Defense → Amused Surrender"
+        },
+        "6": {
+          "frame": "MCU: Barista presenting new drink like a game show prize, customer applauding sarcastically",
+          "audio": "'Congratulations! You've unlocked: TRYING SOMETHING NEW!' Confetti falls.",
+          "valueShift": "Resistance → Playful Acceptance"
+        }
+      },
+      "stormCloud": {
+        "detail": "The barista has a support group flyer: 'Creatures of Habit Anonymous - Tuesdays at 7pm'",
+        "rating": "TOO OBVIOUS"
+      }
+    },
+    "darker": {
+      "label": "Darker",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista's question reveals that the routine isn't comfort—it's a cage, and they've forgotten they ever had the key.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands placing exact change, but coins are worn smooth from years of the same transaction",
+          "audio": "Coins clink with hollow sound, espresso machine sounds like a heartbeat monitor",
+          "valueShift": "Routine → Entrapment"
+        },
+        "3": {
+          "frame": "CU: Barista's hand hovering over cup, but their expression is sad, almost pitying",
+          "audio": "'When was the last time you chose anything?' Voice gentle but cutting.",
+          "duration": 5,
+          "valueShift": "Question → Accusation"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes, but they're hollow, the panic of someone who can't remember who they were",
+          "audio": "Long silence. Then whispered: 'I don't remember.' Realization dawning.",
+          "valueShift": "Confusion → Horror"
+        },
+        "5": {
+          "frame": "CU: Customer's hand reaching toward menu, but it's shaking, paralyzed by too many options",
+          "audio": "Breathing quickens, cafe sounds become overwhelming, retreat: 'Just... the usual.'",
+          "valueShift": "Attempt → Failure"
+        },
+        "6": {
+          "frame": "MCU: Barista writing the usual order, customer's face blank, both knowing something died here",
+          "audio": "Marker squeaks. No words. The espresso machine sounds like a funeral dirge.",
+          "valueShift": "Hope → Resignation"
+        }
+      },
+      "invisibleWide": "The customer once had dreams, plans, a self that made choices. But somewhere along the way, they traded agency for the comfort of never having to decide. Now they're not sure there's anyone left inside to choose.",
+      "stormCloud": {
+        "detail": "The customer's phone wallpaper is from five years ago. They haven't changed it because they haven't noticed.",
+        "rating": "INVISIBLE"
+      }
+    },
+    "tender": {
+      "label": "Tender",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista's gentle question opens a door to change that feels less like disruption and more like coming home to yourself.",
+      "shotOverrides": {
+        "2": {
+          "frame": "MCU: Customer starting to order, but barista's warm smile makes them pause, really see each other",
+          "audio": "Barista, softly: 'Hey. Can I ask you something?' Genuine care in voice.",
+          "valueShift": "Transaction → Connection"
+        },
+        "3": {
+          "frame": "CU: Barista's hand gently touching the menu, inviting rather than pushing",
+          "audio": "'I've been wondering... is this still what you want? Or just what you're used to?'",
+          "valueShift": "Challenge → Invitation"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes softening, a small smile, relief at being seen",
+          "audio": "'You know what? I'm not sure anymore.' Pause. 'And that's okay?'",
+          "valueShift": "Uncertainty → Permission"
+        },
+        "5": {
+          "frame": "CU: Customer's hand on menu, but relaxed now, exploring with curiosity not fear",
+          "audio": "'What made you happy before you stopped asking?' Gentle, patient.",
+          "valueShift": "Pressure → Discovery"
+        },
+        "6": {
+          "frame": "MCU: Both leaning over counter, looking at menu together, a shared moment of possibility",
+          "audio": "'Let's find out together.' Marker writes something new. Both smile.",
+          "valueShift": "Alone → Accompanied"
+        }
+      },
+      "invisibleWide": "The barista has watched this customer shrink into routine over the years and has been waiting for the right moment to offer a gentle hand back toward choice. This is an act of quiet care.",
+      "stormCloud": {
+        "detail": "The barista has been leaving different drink recommendations on the customer's cup for weeks. Today is the first day they noticed.",
+        "rating": "WELL-HIDDEN"
+      },
+      "platform": {
+        "length": "30 seconds",
+        "hook": "Warm smile disrupting routine signals emotional rather than transactional story",
+        "loop": "Yes — the tender moment of connection invites rewatching",
+        "soundOff": "Moderate — facial expressions carry warmth, but dialogue adds depth"
+      }
+    },
+    "surreal": {
+      "label": "Surreal",
+      "concept": "A person orders the same coffee they've ordered every day for years, but today the barista reveals that the routine has been a spell, and breaking it means stepping into a reality that's been waiting behind the counter all along.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands placing coins, but they leave trails of light, the counter surface ripples like water",
+          "audio": "Coins chime like bells, espresso machine hums in impossible harmonics",
+          "valueShift": "Mundane → Magical"
+        },
+        "2": {
+          "frame": "MCU: Customer's mouth opening, but the words come out backwards, time stuttering",
+          "audio": "Voice echoes, layered: 'lausu eht' then forward: 'Wait, what?'",
+          "valueShift": "Script → Glitch"
+        },
+        "3": {
+          "frame": "CU: Barista's hand hovering over cup, but the cup is infinite, containing galaxies",
+          "audio": "'You've been ordering the same thing for 1,847 days. Do you know why?'",
+          "valueShift": "Question → Cosmic significance"
+        },
+        "4": {
+          "frame": "ECU: Customer's eyes reflecting the menu, but the menu shows their own memories, alternate lives",
+          "audio": "'Because if you order something different, you become someone different.' Whispered.",
+          "valueShift": "Confusion → Revelation"
+        },
+        "5": {
+          "frame": "CU: Customer's hand touching menu, but their hand phases through it, becoming translucent",
+          "audio": "'I'm not real, am I?' Voice calm, accepting. 'I'm just the routine.'",
+          "valueShift": "Identity → Dissolution"
+        },
+        "6": {
+          "frame": "MCU: Barista writing on cup, but the name written is the customer's true name, forgotten",
+          "audio": "'You were real once. Want to try again?' Cup glows. Reality shifts.",
+          "valueShift": "Pattern → Rebirth"
+        }
+      },
+      "invisibleWide": "The coffee shop exists at the intersection of all possible choices. Every regular customer is a person who chose routine over change so many times they became the routine itself. The barista is the guardian of the threshold back to agency.",
+      "stormCloud": {
+        "detail": "Every other customer in the shop is ordering the same thing. They're all the same person at different points in the loop.",
+        "rating": "WELL-HIDDEN"
+      }
+    },
+    "minimalist": {
+      "label": "Minimalist",
+      "concept": "Same order. Different question. Choice made. Change begins.",
+      "shots": [
+        {
+          "id": 1,
+          "frame": "ECU: Coins on counter, arranged in exact pattern",
+          "audio": "Clink. Clink. Clink.",
+          "duration": 5,
+          "valueShift": "Pattern → Recognition"
+        },
+        {
+          "id": 2,
+          "frame": "CU: Two faces across counter, eye contact",
+          "audio": "'The usual?' Pause. 'Or?'",
+          "duration": 5,
+          "valueShift": "Assumption → Question"
+        },
+        {
+          "id": 3,
+          "frame": "ECU: Hand hovering between two menu items",
+          "audio": "Silence. Breathing. Decision.",
+          "duration": 5,
+          "valueShift": "Paralysis → Movement"
+        },
+        {
+          "id": 4,
+          "frame": "CU: Finger pointing to new choice",
+          "audio": "'This one.' Exhale.",
+          "duration": 5,
+          "valueShift": "Old → New"
+        },
+        {
+          "id": 5,
+          "frame": "MCU: Marker writing different name on cup",
+          "audio": "Squeak. Squeak. Done.",
+          "duration": 5,
+          "valueShift": "Same → Different"
+        }
+      ],
+      "invisibleWide": "Everything unnecessary removed. Only the moment of choice remains.",
+      "stormCloud": {
+        "detail": "The new drink name on the cup is the customer's own name. They'd been ordering by number.",
+        "rating": "INVISIBLE"
+      },
+      "platform": {
+        "length": "25 seconds",
+        "hook": "Precise coin pattern immediately signals routine about to break",
+        "loop": "Yes — minimalism invites repeated viewing",
+        "soundOff": "Excellent — pure visual storytelling"
+      }
+    },
+    "operatic": {
+      "label": "Operatic",
+      "concept": "A person stands at the precipice of their daily ritual, but today the barista becomes a prophet, the coffee shop a temple, and the choice between the usual and the unknown becomes an epic battle for the soul's freedom.",
+      "shotOverrides": {
+        "1": {
+          "frame": "CU: Hands slamming coins on counter like a gauntlet thrown, the sound echoing through the shop",
+          "audio": "Coins crash like cymbals, espresso machine roars like an orchestra tuning",
+          "duration": 9,
+          "valueShift": "Routine → Ritual"
+        },
+        "2": {
+          "frame": "MCU: Customer's mouth opening to order, but barista raises hand, light streaming behind them",
+          "audio": "'STOP!' Voice booms. Cafe goes silent. 'Not today. Not anymore.'",
+          "duration": 9,
+          "valueShift": "Expectation → Confrontation"
+        },
+        "3": {
+          "frame": "CU: Barista's hand sweeping across the menu like Moses parting the sea, revealing infinite options",
+          "audio": "'1,847 days you've chosen safety! Today you choose LIFE!' Thunder rumbles.",
+          "duration": 9,
+          "valueShift": "Comfort → Destiny"
+        },
+        "4": {
+          "frame": "ECU: Customer's face, tears streaming, the weight of years of non-choice crashing down",
+          "audio": "'I'm afraid!' Voice breaking. 'What if I choose wrong?!' Wind howls.",
+          "duration": 9,
+          "valueShift": "Denial → Catharsis"
+        },
+        "5": {
+          "frame": "CU: Customer's hand reaching toward menu, trembling, other customers watching in slow motion",
+          "audio": "'There is no wrong! Only the death of never choosing!' Crescendo building.",
+          "duration": 9,
+          "valueShift": "Paralysis → Courage"
+        },
+        "6": {
+          "frame": "MCU: Customer pointing to new drink, barista writing with flourish, light exploding from cup",
+          "audio": "'YES!' Both voices together. Cafe erupts in applause. Music swells. Rebirth.",
+          "duration": 9,
+          "valueShift": "Stagnation → Transcendence"
+        }
+      ],
+      "invisibleWide": "This is not a coffee shop. This is the arena where the human spirit battles the tyranny of habit. The barista is not an employee but a warrior-priest fighting for the customer's soul against the seductive prison of the familiar.",
+      "stormCloud": {
+        "detail": "The shop's name is 'The Last Chance Cafe.' The customer has been here exactly 1,847 times. Tomorrow it closes forever.",
+        "rating": "TOO OBVIOUS"
+      },
+      "platform": {
+        "length": "54 seconds",
+        "hook": "Coins crashing like cymbals immediately signals epic scale",
+        "loop": "No — too emotionally intense for immediate replay",
+        "soundOff": "Poor — the operatic audio is essential"
+      }
+    }
+  }
+}
