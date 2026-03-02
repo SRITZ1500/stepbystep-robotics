@@ -194,7 +194,7 @@ Examples:
     
     # Submit shots
     jobs = []
-    for shot in shots:
+    for i, shot in enumerate(shots):
         try:
             # Generate prompt
             prompt = frame_to_prompt(shot.frame)
@@ -224,6 +224,11 @@ Examples:
             )
             
             jobs.append(job)
+            
+            # Add delay between submissions to avoid throttling (except after last shot)
+            if i < len(shots) - 1:
+                print(f"  Waiting 3s before next submission...")
+                time.sleep(3)
             
         except Exception as e:
             print(f"  ✗ Shot {shot.id} submission failed: {e}")
